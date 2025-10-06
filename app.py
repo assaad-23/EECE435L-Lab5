@@ -143,5 +143,6 @@ def api_delete_user(user_id):
     return jsonify(delete_user(user_id))
 
 if __name__ == "__main__":
+    print("Flask API running...") 
     create_db_table()             
     app.run(debug=True)           
